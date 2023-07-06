@@ -70,8 +70,8 @@ export default function Home() {
 					</div>
 				</div>
 				<div className={styles.seperator} style={{ transform: "rotate(180deg)" }}></div>
-				<div className={styles.title}>How does it work?</div>
-				<ScrollSection />
+				{/* <div className={styles.title}>How does it work?</div>
+				<ScrollSection /> */}
 				<div className={styles.beforeAfter}>
 					<div className={styles.before}>
 						<div className={styles.title}>Before GranthAi (5 steps) 😫</div>
