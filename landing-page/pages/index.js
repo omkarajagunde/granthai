@@ -98,8 +98,8 @@ export default function Home() {
 				</div>
 				<div className={styles.seperator}></div>
 
-				<div className={styles.pricing}>Pricing</div>
-				<div className={styles.footer}>Contact</div>
+				{/* <div className={styles.pricing}>Pricing</div>
+				<div className={styles.footer}>Contact</div> */}
 			</main>
 		</>
 	);
