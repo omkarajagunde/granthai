@@ -1,8 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import Script from "next/script";
+import HorizontalScroll from "react-scroll-horizontal";
+import ScrollSection from "@/components/ScrollSection";
 
 const inter = Montserrat({
 	subsets: ["latin"],
@@ -10,6 +12,8 @@ const inter = Montserrat({
 });
 
 export default function Home() {
+	const component = useRef();
+	const slider = useRef();
 	const [state, setState] = useState({
 		beforeSteps: [
 			"Install swagger or other tools",
@@ -22,6 +26,12 @@ export default function Home() {
 		afterSteps: ["Install & integrate the middleware", "Ready  to view"]
 	});
 
+	useEffect(() => {});
+
+	const handleClick = () => {
+		window.open("https://forms.gle/uzhQShaxyFrcrWJs9", "_blank");
+	};
+
 	return (
 		<>
 			<Head>
@@ -30,6 +40,7 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+			<Script strategy="beforeInteractive" src="/bee-inspect-widget.js" />
 			<main className={`${styles.main} ${inter.className}`}>
 				<div className={styles.heroSection}>
 					<div className={styles.left}>
@@ -43,7 +54,9 @@ export default function Home() {
 							Maximize developer productivity with our backend agnostic API documentation tool.
 						</div>
 						<div className={styles.seperator}></div>
-						<div className={styles.callToAction}>Get early access</div>
+						<div className={styles.callToAction} onClick={handleClick}>
+							Get early access
+						</div>
 						<div className={styles.supportedTech}>
 							<div>Supports </div>
 							<img src={"/js-logo.svg"} />
@@ -57,6 +70,8 @@ export default function Home() {
 					</div>
 				</div>
 				<div className={styles.seperator} style={{ transform: "rotate(180deg)" }}></div>
+				<div className={styles.title}>How does it work?</div>
+				<ScrollSection />
 				<div className={styles.beforeAfter}>
 					<div className={styles.before}>
 						<div className={styles.title}>Before GranthAi (5 steps) 😫</div>
@@ -82,6 +97,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div className={styles.seperator}></div>
+
 				<div className={styles.pricing}>Pricing</div>
 				<div className={styles.footer}>Contact</div>
 			</main>
