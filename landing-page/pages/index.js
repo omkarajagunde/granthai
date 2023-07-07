@@ -26,10 +26,8 @@ export default function Home() {
 		afterSteps: ["Install & integrate the middleware", "Ready  to view"]
 	});
 
-	useEffect(() => {});
-
 	const handleClick = () => {
-		window.open("https://forms.gle/uzhQShaxyFrcrWJs9", "_blank");
+		window.open("https://forms.gle/KYQi8vwgpYiixzbR9", "_blank");
 	};
 
 	return (
