@@ -23,11 +23,22 @@ export default function Home() {
 			"Deploy",
 			"Ready to view"
 		],
-		afterSteps: ["Install & integrate the middleware", "Ready  to view"]
+		socialsArr: [
+			{ name: "Twitter", logo: "/twitter-logo.png", url: "#" },
+			{ name: "Instagram", logo: "/instagram-logo.png", url: "https://insta.openinapp.co/1ns3u" },
+			{ name: "Threads", logo: "/threads-logo.png", url: "https://openinapp.co/iamxd" },
+			{ name: "Linkedin", logo: "/linkedin-logo.png", url: "#" }
+		],
+		afterSteps: ["Install & integrate the middleware", "Ready  to view"],
+		mailTo: "manage.granthai@gmail.com"
 	});
 
 	const handleClick = () => {
 		window.open("https://forms.gle/KYQi8vwgpYiixzbR9", "_blank");
+	};
+
+	const handleSocialClick = (url) => {
+		window.open(url, "_blank");
 	};
 
 	return (
@@ -98,6 +109,25 @@ export default function Home() {
 
 				{/* <div className={styles.pricing}>Pricing</div>
 				<div className={styles.footer}>Contact</div> */}
+
+				<div className={styles.lastSection}>
+					<div className={styles.contactUs}>
+						<div className={styles.title2}>Contact us?</div>
+						<div>
+							<a target="_blank" href={`https://openinapp.co/24jtf`}>
+								{state.mailTo}
+							</a>
+						</div>
+					</div>
+					<div className={styles.socials}>
+						<div className={styles.title2}>Join us on social media?</div>
+						<div className={styles.socialIcons}>
+							{state.socialsArr.map((acc) => (
+								<img onClick={() => handleSocialClick(acc.url)} src={acc.logo} />
+							))}
+						</div>
+					</div>
+				</div>
 			</main>
 		</>
 	);
