@@ -86,6 +86,13 @@ $color4: #F7E9B2;
     margin-top: 12px;
 }
 
+.seperatorGreen {
+    background: linear-gradient(90deg, #6a6a6a 100%, rgba(255, 255, 255, 0.0) 100%);
+    height: 2px;
+    width: 90%;
+    margin-top: 12px;
+}
+
 .callToAction{
     border-radius: 2px;
     margin-top: 40px;
@@ -219,6 +226,85 @@ $color4: #F7E9B2;
     color: rgb(207, 207, 207);
 }
 
+.pricing{
+    width: 100%;
+    padding: 3rem 4rem 4rem 4rem;
+    max-width: 1300px;
+}
+
+.pricingBox{
+    width: 100%;
+    background: #FFF;
+    border-radius: 12px;
+    padding: 2rem;
+
+    &_one{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $color1;
+        input{
+            all: unset;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            width: 500px;
+            &::placeholder{
+                opacity: .5;
+            }
+        }
+    }
+
+    &_two{
+        width: 100%;
+        display: flex;
+    }
+
+    &_two_left{
+        width: 70%;
+    }
+
+    &_two_left_1{
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        div:nth-child(1){
+            width: 40%;
+            color: #6a6a6a;
+            font-weight: 500;
+            font-size: .7rem;
+            text-transform: uppercase;
+        }
+    }
+
+    &_two_left_2{
+        display: flex;
+        flex-wrap: wrap;
+        .step{
+            width: 300px;
+            color: $color1;
+            font-weight: 500;
+        }
+    }
+
+    &_two_right {
+        width: 30%;
+        background: $color1;
+        border-radius: 12px;
+        padding: 2rem;
+        color: #F7E9B2;
+    }
+
+    &_apiCount{
+        font-size: 1rem;
+    }
+
+    &_apiRate{
+        font-size: 1.2rem;
+        height: 60px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .heroSection {
         padding: 2rem;
@@ -305,6 +391,73 @@ $color4: #F7E9B2;
             margin-left: unset;
             margin-right: 20px;
             width: 30px;
+        }
+    }
+
+
+    .pricing{
+        padding: 2rem;
+    }
+    .pricingBox {
+        width: 100%;
+        background: #FFF;
+        border-radius: 12px;
+        padding: 2rem;
+
+        &_one {
+            font-size: 1.2rem;
+            input {
+                width: 100%;
+            }
+        }
+
+        &_two {
+            width: 100%;
+            display: block;
+        }
+
+        &_two_left {
+            width: 100%;
+        }
+
+        &_two_left_1 {
+            width: 100%;
+            margin-top: 24px;
+            margin-bottom: 14px;
+
+            div:nth-child(1) {
+                width: 100%;
+            }
+        }
+
+        &_two_left_2 {
+            .step {
+                width: 100%;
+                font-size: .9rem;
+            }
+            .bullet{
+                min-width: 30px;
+                height: 30px;
+                img{
+                    width: 15px;
+                }
+            }
+        }
+
+        &_two_right {
+            width: 100%;
+            background: $color1;
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        &_apiCount {
+            font-size: 1rem;
+        }
+
+        &_apiRate {
+            font-size: 1.2rem;
+            height: 60px;
         }
     }
 }

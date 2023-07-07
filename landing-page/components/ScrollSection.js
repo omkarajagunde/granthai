@@ -15,7 +15,7 @@ function ScrollSection() {
 				translateX: 0
 			},
 			{
-				translateX: "-200vw",
+				translateX: "-300%",
 				ease: "none",
 				duration: 1,
 				scrollTrigger: {

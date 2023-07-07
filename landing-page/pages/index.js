@@ -30,7 +30,8 @@ export default function Home() {
 			{ name: "Linkedin", logo: "/linkedin-logo.png", url: "#" }
 		],
 		afterSteps: ["Install & integrate the middleware", "Ready  to view"],
-		mailTo: "manage.granthai@gmail.com"
+		mailTo: "manage.granthai@gmail.com",
+		apisCount: 5
 	});
 
 	const handleClick = () => {
@@ -39,6 +40,10 @@ export default function Home() {
 
 	const handleSocialClick = (url) => {
 		window.open(url, "_blank");
+	};
+
+	const handleAPIRange = (eve) => {
+		setState((prevState) => ({ ...prevState, apisCount: Number(eve.target.value) }));
 	};
 
 	return (
@@ -111,8 +116,80 @@ export default function Home() {
 				</div>
 				<div className={styles.seperator}></div>
 
-				{/* <div className={styles.pricing}>Pricing</div>
-				<div className={styles.footer}>Contact</div> */}
+				<div className={styles.pricing}>
+					<div className={styles.title}>Pricing</div>
+					<div className={styles.pricingBox}>
+						<div className={styles.pricingBox_one}>
+							<div>How many API's do you want to document?</div>
+							<div>
+								<input
+									onChange={handleAPIRange}
+									type="range"
+									value={state.apisCount}
+									step={5}
+									min={0}
+									max={500}
+								></input>
+							</div>
+							<div className={styles.pricingBox_apiCount}>
+								<span style={{ fontSize: "1.4rem" }}>{state.apisCount}</span> API's
+							</div>
+						</div>
+						<div className={styles.pricingBox_two}>
+							<div className={styles.pricingBox_two_left}>
+								<div className={styles.pricingBox_two_left_1}>
+									<div>Everything included</div>
+								</div>
+								<div className={styles.pricingBox_two_left_2}>
+									<div className={styles.step}>
+										<div className={styles.bullet}>
+											<img src={"/tick.png"} />
+										</div>
+										Live hosting
+									</div>
+									<div className={styles.step}>
+										<div className={styles.bullet}>
+											<img src={"/tick.png"} />
+										</div>
+										Automatic API updation
+									</div>
+									<div className={styles.step}>
+										<div className={styles.bullet}>
+											<img src={"/tick.png"} />
+										</div>
+										Automatic API creation
+									</div>
+									<div className={styles.step}>
+										<div className={styles.bullet}>
+											<img src={"/tick.png"} />
+										</div>
+										Export to Postman
+									</div>
+								</div>
+							</div>
+							<div className={styles.pricingBox_two_right}>
+								<div className={styles.pricingBox_apiRate}>
+									{state.apisCount <= 10 && <span style={{ fontSize: "3rem" }}>FREE 🤝</span>}
+
+									{state.apisCount > 10 && (
+										<div>
+											$
+											<span style={{ fontSize: "2.7rem", marginLeft: "5px", fontWeight: "500" }}>
+												{parseInt(state.apisCount * 1.25)}
+											</span>
+											<br />
+											USD per month
+										</div>
+									)}
+								</div>
+								<div onClick={handleClick} className={styles.callToAction} style={{ width: "100%" }}>
+									GET STARTED
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className={styles.seperator} style={{ transform: "rotate(180deg)" }}></div>
 
 				<div className={styles.lastSection}>
 					<div className={styles.contactUs}>
