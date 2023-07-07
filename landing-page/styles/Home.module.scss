@@ -431,9 +431,12 @@ $color4: #F7E9B2;
         }
 
         &_two_left_2 {
+            margin-top: 24px;
+            margin-bottom: 24px;
             .step {
                 width: 100%;
                 font-size: .9rem;
+                margin-bottom: 12px;
             }
             .bullet{
                 min-width: 30px;
