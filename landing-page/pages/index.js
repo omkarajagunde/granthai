@@ -169,7 +169,7 @@ export default function Home() {
 							</div>
 							<div className={styles.pricingBox_two_right}>
 								<div className={styles.pricingBox_apiRate}>
-									{state.apisCount <= 10 && <span style={{ fontSize: "3rem" }}>FREE 🤝</span>}
+									{state.apisCount <= 10 && <span style={{ fontSize: "2.7rem" }}>FREE 🤝</span>}
 
 									{state.apisCount > 10 && (
 										<div>
