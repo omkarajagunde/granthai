@@ -1,7 +1,6 @@
 
 
-![](https://youtu.be/P31ipww2_xc)
-<video src='https://youtu.be/P31ipww2_xc' width=180/>
+https://youtu.be/P31ipww2_xc
 
 
 ### How to integrate?
