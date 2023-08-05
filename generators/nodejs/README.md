@@ -1,5 +1,4 @@
 https://github.com/omkarajagunde/granthai/assets/50138744/35d42210-307e-4cb8-a320-106b661b1593
-
 ### How to integrate?
 ```js
 const GranthAi = require("granthai")
