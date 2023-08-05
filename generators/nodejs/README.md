@@ -1,7 +1,7 @@
 
 
-![](https://github.com/omkarajagunde/granthai/blob/master/generators/nodejs/GranthAi.mov)
-<video src='https://github.com/omkarajagunde/granthai/blob/master/generators/nodejs/GranthAi.mov' width=180/>
+![](https://youtu.be/P31ipww2_xc)
+<video src='https://youtu.be/P31ipww2_xc' width=180/>
 
 
 ### How to integrate?
