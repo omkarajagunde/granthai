@@ -17,7 +17,7 @@ When the NodeJs server starts up, GranthAi will add a new public route to your s
 ### Is it free to use? 
 
 Absolutely, this tool is completely free to use.
-[Signup here to get updates](https://granthai.com/signup)
+[Signup here to get updates](https://granthai.com/)
 
 - Rest assured that we don't collect or retain any of your API data or metrics on our servers. 
 - This information is solely utilized for auditing purposes, service enhancement, and gaining insight into user requirements. 
