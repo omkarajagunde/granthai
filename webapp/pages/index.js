@@ -87,7 +87,7 @@ export default function Home() {
 					</div>
 					<div className={styles.right}>
 						{/* <img src={"/js-snippet.png"} /> */}
-						<video autoPlay controls loop muted playsInline>
+						<video autoPlay loop muted playsInline>
 							<source
 								src="https://github.com/omkarajagunde/granthai/assets/50138744/35d42210-307e-4cb8-a320-106b661b1593"
 								type="video/mp4"
@@ -124,7 +124,7 @@ export default function Home() {
 				</div>
 				<div className={styles.seperator}></div>
 
-				<div className={styles.pricing}>
+				{/* <div className={styles.pricing}>
 					<div className={styles.title}>Pricing</div>
 					<div className={styles.pricingBox}>
 						<div className={styles.pricingBox_one}>
@@ -196,7 +196,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 				<div className={styles.seperator} style={{ transform: "rotate(180deg)" }}></div>
 
 				<div className={styles.lastSection}>
