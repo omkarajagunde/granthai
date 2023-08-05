@@ -2,7 +2,7 @@
 
 export default function handler(req, res) {
 	if (req.method === "POST") {
-		console.log("LOGG -- ", req.body);
+		console.log("Incoming webhook from Tally -- ", JSON.stringify(req.body));
 		res.status(200).json({ name: "John Doe" });
 	}
 }
