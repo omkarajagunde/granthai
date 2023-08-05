@@ -20,7 +20,8 @@ async function GranthAi({ docTitle, key, baseUrl }) {
 	}
 
 	if (!FUNC_REGISTERED) {
-		console.log("Please help us improve the service by signing up here - https://granthai.com/");
+		console.log("[GranthAi] Please help us improve the service by signing up here - https://granthai.com/");
+		FUNC_REGISTERED = true;
 	}
 
 	return function (req, res, next) {
