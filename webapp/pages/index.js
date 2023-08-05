@@ -35,7 +35,7 @@ export default function Home() {
 	});
 
 	const handleClick = () => {
-		window.open("/signup", "_blank");
+		window.open("https://tally.so/r/3qDAgg", "_blank");
 	};
 
 	const handleSocialClick = (url) => {
@@ -61,7 +61,6 @@ export default function Home() {
 				<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 				<link rel="manifest" href="/site.webmanifest" />{" "}
 			</Head>
-			<Script strategy="beforeInteractive" src="/bee-inspect-widget.js" />
 			<main className={`${styles.main} ${inter.className}`}>
 				<div className={styles.heroSection}>
 					<div className={styles.left}>
