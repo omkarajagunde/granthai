@@ -86,7 +86,10 @@ export default function Home() {
 						</div>
 					</div>
 					<div className={styles.right}>
-						<img src={"/js-snippet.png"} />
+						{/* <img src={"/js-snippet.png"} /> */}
+						<video controls autoPlay>
+							<source src="https://github.com/omkarajagunde/granthai/assets/50138744/35d42210-307e-4cb8-a320-106b661b1593" />
+						</video>
 					</div>
 				</div>
 				<div className={styles.seperator} style={{ transform: "rotate(180deg)" }}></div>

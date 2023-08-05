@@ -22,18 +22,18 @@ $color4: #F7E9B2;
 }
 
 .left{
-    width: 50%;
+    width: 40%;
 }
 
 .right{
-    width: 50%;
+    width: 60%;
     height: max-content;
     overflow: hidden;
-    img{
-        margin-top: 50px;
-        width: 90%;
+    video{
+        margin-top: 100px;
+        width: 100%;
         border: 0;
-        transform: scale(1.1);
+        border-radius: 10px;
         overflow: hidden;
     }
 }
