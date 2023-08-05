@@ -1,0 +1,25 @@
+{
+	"name": "granthai",
+	"version": "1.1.7",
+	"description": "Nodejs package to generate automatic API documentation",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"publish": "npm publish"
+	},
+	"keywords": [
+		"API",
+		"documentation",
+		"generator",
+		"SwaggerDocs",
+		"JsDoc",
+		"code",
+		"documentation",
+		"automatic",
+		"documentation",
+		"generator"
+	],
+	"author": "Omkar Ajagunde, Sanket Chaudhari",
+	"license": "ISC",
+	"dependencies": {}
+}
