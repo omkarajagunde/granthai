@@ -7,6 +7,13 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"publish": "npm publish"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/omkarajagunde/granthai.git"
+	},
+	"author": "Omkar Ajagunde <ajagundeomkar@gmail.com> (http://omkarajagunde.web.app/), Sanket Chaudhari <clasac119@gmail.com> (https://github.com/sanketssc)",
+	"license": "MIT",
+	"homepage": "https://granthai.com",
 	"keywords": [
 		"API",
 		"documentation",
@@ -19,7 +26,5 @@
 		"documentation",
 		"generator"
 	],
-	"author": "Omkar Ajagunde, Sanket Chaudhari",
-	"license": "ISC",
 	"dependencies": {}
 }
