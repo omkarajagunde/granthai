@@ -11,10 +11,16 @@ const jsonData = {
 	paths: {}
 };
 
+const FUNC_REGISTERED = false;
+
 async function GranthAi({ docTitle, key, baseUrl }) {
 	jsonData.info.title = docTitle || "API Documentation";
 	if (baseUrl && baseUrl.length > 0) {
 		jsonData.servers.push({ url: baseUrl, description: `${docTitle} server` });
+	}
+
+	if (!FUNC_REGISTERED) {
+		console.log("Please help us improve the service by signing up here - https://granthai.com/");
 	}
 
 	return function (req, res, next) {
