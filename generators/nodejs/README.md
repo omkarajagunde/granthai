@@ -1,6 +1,6 @@
 
 
-![](https://github.com/omkarajagunde/granthai/blob/master/generators/nodejs/GranthAi.gif)
+![](https://github.com/omkarajagunde/granthai/blob/master/generators/nodejs/GranthAi.mov)
 
 ### How to integrate?
 ```js
