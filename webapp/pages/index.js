@@ -75,7 +75,7 @@ export default function Home() {
 						</div>
 						<div className={styles.seperator}></div>
 						<div className={styles.callToAction} onClick={handleClick}>
-							Get early access
+							Signup now
 						</div>
 						<div className={styles.supportedTech}>
 							<div>Supports </div>
