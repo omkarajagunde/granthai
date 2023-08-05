@@ -87,7 +87,7 @@ export default function Home() {
 					</div>
 					<div className={styles.right}>
 						{/* <img src={"/js-snippet.png"} /> */}
-						<video autoPlay loop muted playsInline>
+						<video autoPlay controls loop muted playsInline>
 							<source
 								src="https://github.com/omkarajagunde/granthai/assets/50138744/35d42210-307e-4cb8-a320-106b661b1593"
 								type="video/mp4"
