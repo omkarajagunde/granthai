@@ -35,7 +35,7 @@ export default function Home() {
 	});
 
 	const handleClick = () => {
-		window.open("https://forms.gle/KYQi8vwgpYiixzbR9", "_blank");
+		window.open("/signup", "_blank");
 	};
 
 	const handleSocialClick = (url) => {
