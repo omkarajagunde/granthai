@@ -1,0 +1,39 @@
+{
+	"name": "granthai",
+	"version": "1.2.7",
+	"description": "Nodejs package to generate automatic API documentation",
+	"main": "index.js",
+	"files": [
+		"dist/index.js",
+		"README.md"
+	],
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build-and-publish": "rollup -c && npm publish"
+	},
+	"author": "Omkar Ajagunde <ajagundeomkar@gmail.com> (http://omkarajagunde.web.app/), Sanket Chaudhari <clasac119@gmail.com> (https://github.com/sanketssc)",
+	"license": "MIT",
+	"homepage": "https://granthai.com",
+	"keywords": [
+		"API",
+		"documentation",
+		"generator",
+		"SwaggerDocs",
+		"JsDoc",
+		"code",
+		"documentation",
+		"automatic",
+		"documentation",
+		"generator"
+	],
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^25.0.3",
+		"@rollup/plugin-json": "^6.0.0",
+		"@rollup/plugin-node-resolve": "^15.1.0",
+		"rollup": "^3.27.2",
+		"rollup-obfuscator": "^3.0.2"
+	},
+	"dependencies": {
+		"mixpanel": "^0.17.0"
+	}
+}
