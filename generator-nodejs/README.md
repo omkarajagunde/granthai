@@ -4,8 +4,8 @@ https://github.com/omkarajagunde/granthai/assets/50138744/35d42210-307e-4cb8-a32
 const GranthAi = require("granthai")
 const app = express()
 app.use(GranthAi({ 
-    docTitle: "..." // optional
-    key: "..."      // optional
+    docTitle: "...", // optional
+    key: "...",     // optional
     baseUrl: "..."  // required
 }))
 ```
@@ -19,7 +19,7 @@ When the NodeJs server starts up, GranthAi will add a new public route to your s
 ### Is it free to use? 
 
 Absolutely, this tool is completely free to use.
-[Signup here to get updates](https://granthai.com/)
+[Signup here to get updates](https://granthai.vercel.app/)
 
 - Rest assured that we don't collect or retain any of your API data or metrics on our servers. 
 - This information is solely utilized for auditing purposes, service enhancement, and gaining insight into user requirements. 

@@ -28,7 +28,7 @@ function GranthAi({ docTitle, baseUrl, key }) {
 	}
 
 	if (!FUNC_REGISTERED) {
-		console.log("[GranthAi] Please help us improve the service by signing up here - https://granthai.com/");
+		console.log("[GranthAi] Please help us improve the service by signing up here - https://granthai.vercel.app/");
 		FUNC_REGISTERED = true;
 	}
 
